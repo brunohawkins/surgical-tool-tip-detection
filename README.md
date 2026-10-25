@@ -49,11 +49,3 @@ The score is 40% precision, 35% recall, 15% tip error and 10% speed (full marks 
 | [`training/stress_test.py`](training/stress_test.py) | Robustness checks: frame sizes from 40×30 to 4K, blank and noise frames |
 | [`training/eval_pitvis.py`](training/eval_pitvis.py), [`training/pitvis_negatives.py`](training/pitvis_negatives.py) | Tests on public PitVis footage, and a (rejected) hard-negative experiment |
 | [`DATASETS.md`](DATASETS.md) | External data and licences |
-
-## Not included
-
-- **The challenge's interface and scoring package** (`surgnet.shared`, `surgnet.labelio`, `surgnet.scoring`,
-  `surgnet.benchmark`), which belongs to the organisers. The code here imports it, so it runs inside the challenge
-  repository rather than on its own.
-- **XRlabs' training data and labels** (under NDA), and **the trained weights**, which were trained on that data.
-- Dataset-specific video names in `training/train.py` are replaced with placeholders (`videoA`, `videoB`).
